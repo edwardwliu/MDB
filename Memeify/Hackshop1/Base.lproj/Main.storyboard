@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eiC-G5-7Mf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--MemeCentral-->
+        <scene sceneID="eY4-b5-p0z">
+            <objects>
+                <collectionViewController id="g1H-U0-FEO" customClass="CollectionViewController" customModule="Hackshop1" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="boH-7J-4Gz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="RDg-4T-4SM">
+                            <size key="itemSize" width="331.5" height="136"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="PiI-65-DSY" customClass="CollectionViewCell" customModule="Hackshop1" customModuleProvider="target">
+                                <rect key="frame" x="134.5" y="64" width="331.5" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="331.5" height="136"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qsK-2X-2m7">
+                                            <rect key="frame" x="0.0" y="0.0" width="331.5" height="136"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG7-PP-GON">
+                                            <rect key="frame" x="30" y="52" width="271" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="image" destination="qsK-2X-2m7" id="93W-xf-lqs"/>
+                                    <outlet property="nameLabel" destination="VG7-PP-GON" id="hwx-Pb-3wV"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="g1H-U0-FEO" id="q5H-XK-Xdf"/>
+                            <outlet property="delegate" destination="g1H-U0-FEO" id="YbM-29-W1b"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="MemeCentral" id="9kv-PS-qWp"/>
+                    <connections>
+                        <segue destination="b6F-fS-Rqy" kind="show" identifier="toImage" id="NfD-cf-e03"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="peJ-OZ-Suu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="354"/>
+        </scene>
+        <!--Meme Picture View Controller-->
+        <scene sceneID="9rG-q6-eMU">
+            <objects>
+                <viewController id="b6F-fS-Rqy" customClass="MemePictureViewController" customModule="Hackshop1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nLD-92-hdL"/>
+                        <viewControllerLayoutGuide type="bottom" id="DbC-AM-qWt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Jf-Kl-94J">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lsn-cN-CUu">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white" translatesAutoresizingMaskIntoConstraints="NO" id="BIe-c8-ffY">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lsn-cN-CUu" firstAttribute="leading" secondItem="1Jf-Kl-94J" secondAttribute="leading" id="AeI-7c-Otd"/>
+                            <constraint firstItem="Lsn-cN-CUu" firstAttribute="top" secondItem="1Jf-Kl-94J" secondAttribute="top" id="Bnd-9P-BuP"/>
+                            <constraint firstAttribute="trailing" secondItem="Lsn-cN-CUu" secondAttribute="trailing" id="Cse-ch-9OS"/>
+                            <constraint firstItem="BIe-c8-ffY" firstAttribute="bottom" secondItem="DbC-AM-qWt" secondAttribute="top" id="IQ9-R4-6h7"/>
+                            <constraint firstItem="BIe-c8-ffY" firstAttribute="top" secondItem="Lsn-cN-CUu" secondAttribute="top" id="cN3-hw-vqL"/>
+                            <constraint firstItem="Lsn-cN-CUu" firstAttribute="bottom" secondItem="DbC-AM-qWt" secondAttribute="top" id="jjy-EF-UI3"/>
+                            <constraint firstItem="BIe-c8-ffY" firstAttribute="leading" secondItem="Lsn-cN-CUu" secondAttribute="leading" id="t5v-gA-fTj"/>
+                            <constraint firstItem="BIe-c8-ffY" firstAttribute="trailing" secondItem="Lsn-cN-CUu" secondAttribute="trailing" id="tTS-VN-BIx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="memePic" destination="Lsn-cN-CUu" id="gTn-0k-nAP"/>
+                        <outlet property="overlay" destination="BIe-c8-ffY" id="2Ll-HN-3fM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raL-df-tp0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321" y="354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QSW-QE-kYN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eiC-G5-7Mf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KGq-3D-7Gp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g1H-U0-FEO" kind="relationship" relationship="rootViewController" id="xSR-tR-4At"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WiN-DI-fBo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797" y="354"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="white" width="1080" height="1920"/>
+    </resources>
+</document>

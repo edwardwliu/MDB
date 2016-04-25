@@ -10,4 +10,8 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var namelabel: UILabel!
+    @IBOutlet weak var datelabel: UILabel!
+    
+    
 }

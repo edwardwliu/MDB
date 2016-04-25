@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9611B6960DEE53C9CE35248B530BFDF8987DBFEF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A1FA9603EA7A9C658250DA1A3BD73126E889D366" : 0,
+    "9611B6960DEE53C9CE35248B530BFDF8987DBFEF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F7495B6B-AE1F-4D0B-9B14-6BF362ECA3E8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A1FA9603EA7A9C658250DA1A3BD73126E889D366" : "",
+    "9611B6960DEE53C9CE35248B530BFDF8987DBFEF" : "MDBSocials\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MDBSocials",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MDBSocials.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/christinemunar\/MDBSocials.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9611B6960DEE53C9CE35248B530BFDF8987DBFEF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/edwardwliu\/MDB.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1FA9603EA7A9C658250DA1A3BD73126E889D366"
+    }
+  ]
+}

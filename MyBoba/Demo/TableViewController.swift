@@ -9,6 +9,9 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    var countryName = ["United States", "China", "India"]
+    var countryPop = ["1", "2", "3"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,23 +32,30 @@ class TableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return countryName.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("countrycell", forIndexPath: indexPath) as! TableViewCell
+        cell.countrylabel.text = countryName[indexPath.row]
         return cell
     }
-    */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! ViewController
+        let row = (sender as! NSIndexPath).item
+        vc.num = countryPop[row]
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("toNum", sender: indexPath)
+    }
 
     /*
     // Override to support conditional editing of the table view.

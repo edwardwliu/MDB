@@ -1,0 +1,10 @@
+PODS:
+  - WESlider (0.0.2)
+
+DEPENDENCIES:
+  - WESlider (~> 0.0.2)
+
+SPEC CHECKSUMS:
+  WESlider: 0e30433139868769d3f174ab1f2beb008ce23c24
+
+COCOAPODS: 0.39.0

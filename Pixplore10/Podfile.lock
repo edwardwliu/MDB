@@ -1,0 +1,10 @@
+PODS:
+  - RNFrostedSidebar (0.1.1)
+
+DEPENDENCIES:
+  - RNFrostedSidebar (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  RNFrostedSidebar: 8621bab2f09315d4621e1af26c632aad86277f9c
+
+COCOAPODS: 0.39.0

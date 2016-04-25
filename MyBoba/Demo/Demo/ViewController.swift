@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var num = ""
 
+    @IBOutlet weak var populationLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        populationLabel.text = num
     }
 
     override func didReceiveMemoryWarning() {

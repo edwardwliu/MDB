@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2Ib-yo-Aa4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Pod-->
+        <scene sceneID="1VS-zW-orE">
+            <objects>
+                <viewController id="Fsm-VO-sQy" customClass="PodViewController" customModule="TabDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Koe-XX-g2x" customClass="TVButton" customModule="TVButton">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vRO-S4-VEn" customClass="TVButton" customModule="TVButton">
+                                <rect key="frame" x="73" y="87" width="175" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pod" id="QJA-Ox-NCB"/>
+                    <connections>
+                        <outlet property="myButton" destination="vRO-S4-VEn" id="VE8-H7-fmE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJw-bo-BPS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224" y="228"/>
+        </scene>
+        <!--Web-->
+        <scene sceneID="KiR-bP-rT7">
+            <objects>
+                <viewController id="ecX-fs-diq" customClass="WebTabViewController" customModule="TabDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zSt-SK-D8a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="QlG-X6-7LP">
+                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2nc-X3-8JK">
+                                <rect key="frame" x="244" y="20" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Forward"/>
+                                <connections>
+                                    <action selector="forwardbutton:" destination="ecX-fs-diq" eventType="touchUpInside" id="OIA-NP-Wq2"/>
+                                    <action selector="goForward" destination="QlG-X6-7LP" eventType="touchUpInside" id="hy9-ql-vL1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9az-z1-ZDA">
+                                <rect key="frame" x="134" y="20" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refreshbutton:" destination="ecX-fs-diq" eventType="touchUpInside" id="h8M-Wg-43c"/>
+                                    <action selector="reload" destination="QlG-X6-7LP" eventType="touchUpInside" id="fJ3-Sf-Rad"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nRP-Gj-p54">
+                                <rect key="frame" x="29" y="23" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="backbutton:" destination="ecX-fs-diq" eventType="touchUpInside" id="yhz-Hx-y0m"/>
+                                    <action selector="goBack" destination="QlG-X6-7LP" eventType="touchUpInside" id="bLp-co-SNv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Web" id="qmh-yR-rmb"/>
+                    <connections>
+                        <outlet property="webView" destination="QlG-X6-7LP" id="15y-R9-hCG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AXU-hy-yfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="592" y="228"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="Z0R-QV-M6N">
+            <objects>
+                <viewController id="KQJ-zp-yJ0" customClass="MapTabViewController" customModule="TabDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nxV-65-YGB" customClass="Map">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="ORR-EU-Uk7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="vbu-2Z-ZXw">
+                                <rect key="frame" x="97" y="20" width="127" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.55880366692293615" blue="0.021513158586171199" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Default"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="segmentChanged:" destination="KQJ-zp-yJ0" eventType="valueChanged" id="G1z-Sy-OTo"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="AHC-S2-KL0"/>
+                    <connections>
+                        <outlet property="mapView" destination="ORR-EU-Uk7" id="MZd-XH-V8z"/>
+                        <outlet property="segmentControl" destination="vbu-2Z-ZXw" id="RUH-X8-SVd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H07-fh-LtZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-156" y="228"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XMz-Ml-RDV">
+            <objects>
+                <tabBarController id="2Ib-yo-Aa4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="BMw-rq-hQX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KQJ-zp-yJ0" kind="relationship" relationship="viewControllers" id="agG-Lh-ShY"/>
+                        <segue destination="ecX-fs-diq" kind="relationship" relationship="viewControllers" id="P4o-cH-okV"/>
+                        <segue destination="Fsm-VO-sQy" kind="relationship" relationship="viewControllers" id="cGO-ke-DEG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Al6-ZG-08B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="224.53333333333333" y="-460.07999999999998"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Clk-Oo-DOB">
+            <objects>
+                <viewController id="t3V-et-ite" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s3T-Ix-mxC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ugm-Lr-RFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

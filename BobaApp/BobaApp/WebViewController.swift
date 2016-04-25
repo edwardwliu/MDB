@@ -14,7 +14,7 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let url = NSURL(string: "https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=boba%20places%20near%20me")
+        let url = NSURL(string: "https://www.google.com/")
         //Create the NSURL request, make notw how the NSURL is wrapped
         let request = NSURLRequest(URL: url!)
         //Load the request

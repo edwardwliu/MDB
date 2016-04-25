@@ -1,0 +1,10 @@
+PODS:
+  - TVButton (0.1.5)
+
+DEPENDENCIES:
+  - TVButton (~> 0.1)
+
+SPEC CHECKSUMS:
+  TVButton: 8e8e5ba2890fd88f59b2ff5f84040f40b8c3efb0
+
+COCOAPODS: 0.39.0
